@@ -1,0 +1,24 @@
+{
+  "name": "stack-desarrollo",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sergiohidalgo/stack-desarrollo",
+  "authors": [
+    "Sergio Hidalgo <sergiohidalgo.94@gmail.com>"
+  ],
+  "description": "Plantilla de desarrollo front-end, testing de npm y ayuda memoria",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+	"sprintjs": "sprint#~0.1.0",
+    "bootstrap": "~3.3.5"
+  }
+}
