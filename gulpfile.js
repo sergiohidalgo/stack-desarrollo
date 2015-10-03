@@ -14,11 +14,11 @@ no - minificar html
 */
 
 //Pluggins Globales
-var gulp = require('gulp'),
-	concatCss = require('gulp-concat-css'),
-	sass = require('gulp-sass'),
-	minifyCSS = require('gulp-minify-css'),
-	sourcemaps = require('gulp-sourcemaps');
+var gulp = 			require('gulp'),
+	concatCss = 	require('gulp-concat-css'),
+	sass = 			require('gulp-sass'),
+	minifyCSS = 	require('gulp-minify-css'),
+	sourcemaps = 	require('gulp-sourcemaps');
 
 //Compilar sass
 gulp.task('sass', function () {
