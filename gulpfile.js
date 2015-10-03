@@ -17,12 +17,15 @@ no - minificar html
 var gulp = require('gulp'),
 	concatCss = require('gulp-concat-css'),
 	sass = require('gulp-sass'),
-	minifyCSS = require('gulp-minify-css');
+	minifyCSS = require('gulp-minify-css'),
+	sourcemaps = require('gulp-sourcemaps');
 
 //Compilar sass
 gulp.task('sass', function () {
 	gulp.src('./css/sass/*.scss')
+	.pipe(sourcemaps.init())
 	.pipe(sass.sync().on('error', sass.logError))
+	.pipe(sourcemaps.write('../maps'))
 	.pipe(gulp.dest('./css/sass/css/'))
 });
 
